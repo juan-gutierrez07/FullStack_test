@@ -64,4 +64,10 @@ public class UserController {
 		
 		return "Bienvenido a la rama hotfix";
 	}
+
+	@GetMapping(value="/v1.2.0/feature2")
+	public String Welcome(){
+		
+		return "Bienvenido a la rama feature2";
+	}
 }

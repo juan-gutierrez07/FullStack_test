@@ -58,4 +58,10 @@ public class UserController {
 		
 		return "Bienvenido";
 	}
+
+	@GetMapping(value="/v1.1.0/hotfix")
+	public String Welcome(){
+		
+		return "Bienvenido a la rama hotfix";
+	}
 }

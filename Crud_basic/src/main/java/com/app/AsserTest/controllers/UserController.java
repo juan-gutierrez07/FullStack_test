@@ -20,11 +20,6 @@ public class UserController {
 	@Autowired
 	private IUserServiceJPA UseServi;
 	
-	@GetMapping(value="/test")
-	public String Test(){
-		
-		return "Funciona";
-	}
 	
 	@PostMapping(value="/add")
 	public String addUSer(@RequestBody Userdto userdto) 
@@ -58,5 +53,9 @@ public class UserController {
 		return UseServi.EditUs(user);
 	}
 
-	
+	@GetMapping(value="/welcome")
+	public String Welcome(){
+		
+		return "Bienvenido";
+	}
 }
